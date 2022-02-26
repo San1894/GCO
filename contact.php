@@ -1,3 +1,11 @@
+<script>
+    session_start();
+if (!isset($_SESSION['log'])) {
+    header('location: index.html');
+    exit();
+}
+
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,15 +16,6 @@
     <title>Contact</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
-    
-<script>
-    session_start();
-if (!isset($_SESSION['log'])) {
-    header('location: index.html');
-    exit();
-}
-
-</script>
 </head>
 
 <body>
