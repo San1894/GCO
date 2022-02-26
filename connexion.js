@@ -115,7 +115,7 @@ form.addEventListener("submit", async (e) => {
 	// async ()=>{(res) ? window.location = 'aziz.php': "";}
 	// console.log(data);
 	// const data = new FormData(form);
-	await fetch("connexion.php", {
+	await fetch("https://san1894.github.io/GCO/connexion.php", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
@@ -132,7 +132,7 @@ form.addEventListener("submit", async (e) => {
 			res2 == '{"status":"success"}'
 				? window.location.replace("contact.php")
 				: alert("donnees incorrect !!!")
-		) //(res) ? window.location = 'aziz.php' : ""
+		)
 		.then(
 			inputs.forEach((input) => {
 				input.value = "";
@@ -141,34 +141,4 @@ form.addEventListener("submit", async (e) => {
 		);
 	data = "";
 	console.log(data);
-	//(res.statusText == ok) ? window.location.replace('aziz.php') : '' )
-	// .catch((err) => {
-	//      console.error(err);
-	// });
-	// if(res) redirect(res);
-
-	// .then(function(res){
-	//     if(res.ok){
-	//         console.log(res);
-	//     }
-
-	// })
 });
-
-//  function redirect(){
-//      window.location = 'aziz.php';
-// }
-
-// });
-
-// (res2) ? window.location = 'aziz.php': "";
-//    .then((res2)=>{
-//     if(res2.status == 200) {
-//         window.location = 'aziz.php';
-//     }
-//     })
-
-// } else
-// {
-//     alert('champs mal remplis !!!');
-// }
